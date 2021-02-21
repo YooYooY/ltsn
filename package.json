@@ -1,0 +1,29 @@
+{
+  "name": "ltsn",
+  "version": "1.0.0",
+  "description": "CommandLine Tool for Node LTS",
+  "main": "index.js",
+  "bin": {
+    "ltsn": "bin/ltsn.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/YooYooY/ltsn.git"
+  },
+  "keywords": [
+    "Node",
+    "LTS"
+  ],
+  "author": "chenwl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YooYooY/ltsn/issues"
+  },
+  "homepage": "https://github.com/YooYooY/ltsn#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cli-color": "^2.0.0",
+    "cli-table": "^0.3.5",
+    "compare-versions": "^3.6.0"
+  }
+}
