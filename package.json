@@ -1,5 +1,5 @@
 {
-  "name": "ltsn",
+  "name": "@cvl/ltsn",
   "version": "1.0.0",
   "description": "CommandLine Tool for Node LTS",
   "main": "index.js",

@@ -1,3 +1,27 @@
+### Node LTS 查看工具
+
+#### install
+
+```
+npm install @cvl/ltsn -g
+```
+
+#### command
+
+```
+  Usage:
+    ltsn [8]
+
+  Options:
+    -v, --version             print the version of vc
+    -h, --help                display this message
+
+  Examples:
+    $ ltsn 8
+```
+
+### 关于 Node LTS
+
 Node.js core 在 Node.js 与 io.js 合并后，为了保证发布稳定有序，让开发者能够合理安排升级，开始使用 LTS（Long Term Support）来规划发布周期。第一个 LTS 版本是v4，发布于 2015 年 10 月。在这个规划下，Node.js 的版本相当于 master 分支在特定时间下经过稳定化处理的快照，时间到了就将master分支上稳定的部分整合起来，发布新的版本，因此 Node.js 的发布是以时间的流逝为准，在保证兼容性靠拢的前提下跳版本。
 
 > 每一个 LTS 都会有一个代号，从元素周期表取元素名，按照字母表排序，挑选出合适的。v4 的代号是 Argon(氩)，v6 的代号是 Boron（硼）
