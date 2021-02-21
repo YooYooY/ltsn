@@ -1,16 +1,23 @@
 const axios = require('axios')
+const ora = require('ora');
+const color = require("cli-color");
+const terminalLink = require("terminal-link");
 const compareVersions = require('compare-versions')
 
 module.exports = async (v) => {  
+  const spinner = ora('加载中').start()
   const { data } = await axios.get('https://nodejs.org/dist/index.json')
+  
+  spinner.stop()
 
   return data
     .filter((node) => {
       const cp = v ? compareVersions(node.version, 'v' + v + '.0.0') >= 0 : true
       return node.lts && cp
     })
-    .map((node) => {
-      const { files, ...rest } = node
-      return { ...rest }
+    .map((it) => {
+      const { files, ...rest } = it;
+	  const doc = color.yellow(terminalLink('API', `https://nodejs.org/dist/${it.version}/docs/api/documentation.html`))
+      return { ...rest, doc }
     })
 }
