@@ -3,7 +3,7 @@
 #### install
 
 ```
-npm install @cvl/ltsn -g
+npm install ltsn-nodejs -g
 ```
 
 #### command

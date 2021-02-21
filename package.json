@@ -1,6 +1,6 @@
 {
-  "name": "@cvl/ltsn",
-  "version": "1.0.1",
+  "name": "ltsn-nodejs",
+  "version": "1.0.0",
   "description": "CommandLine Tool for Node LTS",
   "main": "index.js",
   "bin": {
